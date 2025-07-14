@@ -24,6 +24,7 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   // Removed practiceMode - now always in practice mode with Enter to check
+  // @ts-ignore - userAnswers is needed for setUserAnswers usage
   const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
   const [stats, setStats] = useState({ total: 0, correct: 0, attempted: 0 });
   const [showHelp, setShowHelp] = useState(false);

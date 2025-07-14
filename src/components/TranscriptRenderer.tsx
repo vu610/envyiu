@@ -18,7 +18,7 @@ interface BlankAnswer {
 
 const TranscriptRenderer: React.FC<TranscriptRendererProps> = ({
   transcript,
-  practiceMode,
+  practiceMode: _practiceMode, // Unused but keeping for API compatibility
   onAnswerChange,
   onStatsChange
 }) => {

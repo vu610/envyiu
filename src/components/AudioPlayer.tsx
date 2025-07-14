@@ -19,7 +19,6 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
   const [currentTime, setCurrentTime] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   // Load audio file
   useEffect(() => {
