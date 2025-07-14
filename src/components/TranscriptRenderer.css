@@ -1,0 +1,105 @@
+.transcript-renderer {
+  line-height: 2;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.blank-container {
+  position: relative;
+  display: inline-block;
+  margin: 0 3px;
+  vertical-align: middle;
+}
+
+.transcript-input {
+  border: 2px solid var(--border-color) !important;
+  border-radius: 4px !important;
+  padding: 4px 8px !important;
+  font-size: 1rem !important;
+  font-family: inherit !important;
+  background: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+  text-align: center !important;
+  height: 32px !important;
+  min-height: 32px !important;
+  max-height: 32px !important;
+  line-height: 1.2 !important;
+  transition: border-color 0.2s ease, background-color 0.2s ease, width 0.2s ease !important;
+  box-sizing: border-box !important;
+  vertical-align: middle !important;
+  display: inline-block !important;
+  resize: none !important;
+  overflow: hidden !important;
+}
+
+.transcript-input:focus {
+  outline: none !important;
+  border-color: var(--accent-primary) !important;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2) !important;
+  height: 32px !important;
+  min-height: 32px !important;
+  max-height: 32px !important;
+}
+
+.transcript-input.correct {
+  border-color: var(--success) !important;
+  background: rgba(76, 175, 80, 0.1) !important;
+}
+
+.transcript-input.error {
+  border-color: var(--error) !important;
+  background: rgba(244, 67, 54, 0.1) !important;
+}
+
+.correct-answer {
+  color: var(--success);
+  font-weight: 600;
+  margin-left: 4px;
+  font-size: 0.9rem;
+}
+
+.hint-answer {
+  color: #667eea;
+  font-weight: 500;
+  margin-left: 4px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Hover effects */
+.transcript-input:hover {
+  border-color: #999;
+}
+
+.transcript-input.correct:hover {
+  border-color: #28a745;
+}
+
+.transcript-input.error:hover {
+  border-color: #dc3545;
+}
+
+/* Animation for correct/incorrect feedback */
+.transcript-input.correct {
+  animation: correctPulse 0.3s ease-in-out;
+}
+
+.transcript-input.error {
+  animation: errorShake 0.3s ease-in-out;
+}
+
+@keyframes correctPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes errorShake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  75% { transform: translateX(2px); }
+}

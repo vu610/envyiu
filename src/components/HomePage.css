@@ -1,0 +1,124 @@
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--accent-primary) 0%, #764ba2 100%);
+  padding: 2rem;
+  position: relative;
+}
+
+.home-top-bar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.home-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.home-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.test-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.test-list-container h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.test-card {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px var(--shadow);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.test-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px var(--shadow-strong);
+  border-color: var(--accent-primary);
+}
+
+.test-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  margin-bottom: 0.5rem;
+}
+
+.test-name {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.test-action {
+  font-size: 1rem;
+  color: #764ba2;
+  font-weight: 600;
+  text-align: right;
+}
+
+.loading, .error {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  margin: 2rem auto;
+  max-width: 400px;
+}
+
+.error {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    padding: 1rem;
+  }
+  
+  .home-header h1 {
+    font-size: 2rem;
+  }
+  
+  .test-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  
+  .test-card {
+    padding: 1.5rem;
+  }
+}
