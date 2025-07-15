@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import TranscriptRenderer from './TranscriptRenderer';
 import AudioPlayer from './AudioPlayer';
+import type { AudioPlayerRef } from './AudioPlayer';
 import HelpModal from './HelpModal';
 import ThemeToggle from './ThemeToggle';
+import { saveProgress, loadProgress, clearProgress } from '../utils/localStorage';
 import './PracticePage.css';
 
 interface TranscriptItem {
@@ -28,6 +30,9 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
   const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
   const [stats, setStats] = useState({ total: 0, correct: 0, attempted: 0 });
   const [showHelp, setShowHelp] = useState(false);
+  const [blanksState, setBlanksState] = useState<Record<string, any>>({});
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const audioPlayerRef = useRef<AudioPlayerRef>(null);
 
   useEffect(() => {
     const fetchTranscripts = async () => {
@@ -48,15 +53,88 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
     fetchTranscripts();
   }, [testId]);
 
+  // Load saved progress when transcripts are loaded
+  useEffect(() => {
+    if (transcripts.length > 0) {
+      const savedProgress = loadProgress(testId);
+      if (savedProgress) {
+        console.log('Loading saved progress:', savedProgress);
+        setCurrentTranscriptIndex(savedProgress.currentTranscriptIndex);
+        setUserAnswers(savedProgress.userAnswers);
+        setStats(savedProgress.stats);
+        setBlanksState(savedProgress.blanksState);
+      }
+    }
+  }, [testId, transcripts.length]);
+
   const currentTranscript = transcripts[currentTranscriptIndex];
 
   const handleAnswerChange = (answers: Record<string, string>) => {
     setUserAnswers(answers);
   };
 
-  const handleStatsChange = (newStats: { total: number; correct: number; attempted: number }) => {
-    setStats(newStats);
+  // Removed handleStatsChange - stats now calculated from blanksState
+
+  const handleIncorrectAnswer = () => {
+    // Trigger audio replay when user enters incorrect answer
+    if (audioPlayerRef.current) {
+      audioPlayerRef.current.replayAroundCurrentTime();
+    }
   };
+
+  const handleBlanksStateChange = (newBlanksState: Record<string, any>) => {
+    setBlanksState(newBlanksState);
+  };
+
+  // Calculate stats from all blanksState (across all transcripts)
+  const calculateTotalStats = (allBlanksState: Record<string, any>) => {
+    const allBlanks = Object.values(allBlanksState);
+    const total = allBlanks.length;
+    const attempted = allBlanks.filter((b: any) => b.hasBeenChecked).length;
+    const correct = allBlanks.filter((b: any) => b.isCorrect).length;
+
+    return { total, correct, attempted };
+  };
+
+  // Update stats whenever blanksState changes
+  useEffect(() => {
+    const newStats = calculateTotalStats(blanksState);
+    console.log('Calculated total stats:', newStats);
+    setStats(newStats);
+  }, [blanksState]);
+
+  const handleResetProgress = () => {
+    if (confirm('Bạn có chắc muốn xóa toàn bộ tiến trình làm bài? Hành động này không thể hoàn tác.')) {
+      clearProgress(testId);
+      // Reset all states
+      setCurrentTranscriptIndex(0);
+      setUserAnswers({});
+      setStats({ total: 0, correct: 0, attempted: 0 });
+      setBlanksState({});
+    }
+  };
+
+  const toggleSidebar = () => {
+    setSidebarCollapsed(!sidebarCollapsed);
+  };
+
+  // Save progress to localStorage
+  const saveCurrentProgress = () => {
+    console.log('Saving progress:', { currentTranscriptIndex, userAnswers, stats, blanksState });
+    saveProgress(testId, {
+      currentTranscriptIndex,
+      userAnswers,
+      stats,
+      blanksState
+    });
+  };
+
+  // Auto-save when important state changes
+  useEffect(() => {
+    if (transcripts.length > 0) {
+      saveCurrentProgress();
+    }
+  }, [currentTranscriptIndex, userAnswers, stats, blanksState]);
 
   // Reset stats when transcript changes
   useEffect(() => {
@@ -129,6 +207,13 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
           >
             ? Trợ giúp
           </button>
+          <button
+            className="help-button reset-button"
+            onClick={handleResetProgress}
+            title="Xóa tiến trình đã lưu"
+          >
+            🔄 Reset
+          </button>
         </div>
 
         <div className="practice-controls">
@@ -140,20 +225,34 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
       </header>
 
       <div className="practice-content">
-        <div className="sidebar">
+
+
+        <div className={`sidebar ${sidebarCollapsed ? 'collapsed' : ''}`}>
           <div className="sidebar-header">
-            <h3>Danh sách câu hỏi</h3>
-            <div className="progress-summary">
-              {transcripts.length > 0 && (
-                <span className="progress-text">
-                  {currentTranscriptIndex + 1} / {transcripts.length}
-                </span>
-              )}
+            <div className="sidebar-title">
+              <h3>Danh sách câu hỏi</h3>
+              <button
+                className="sidebar-toggle"
+                onClick={toggleSidebar}
+                title={sidebarCollapsed ? 'Mở sidebar' : 'Đóng sidebar'}
+              >
+                {sidebarCollapsed ? '▶' : '◀'}
+              </button>
             </div>
+            {!sidebarCollapsed && (
+              <div className="progress-summary">
+                {transcripts.length > 0 && (
+                  <span className="progress-text">
+                    {currentTranscriptIndex + 1} / {transcripts.length}
+                  </span>
+                )}
+              </div>
+            )}
           </div>
 
-          <div className="question-list">
-            {transcripts.map((item, index) => {
+          {!sidebarCollapsed && (
+            <div className="question-list">
+              {transcripts.map((item, index) => {
               const isActive = index === currentTranscriptIndex;
               const isPrevious = index < currentTranscriptIndex;
 
@@ -180,10 +279,12 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
                   </div>
                 </div>
               );
-            })}
-          </div>
+              })}
+            </div>
+          )}
 
-          <div className="sidebar-footer">
+          {!sidebarCollapsed && (
+            <div className="sidebar-footer">
             <div className="quick-nav">
               <button
                 className="quick-nav-btn"
@@ -203,6 +304,7 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
               </button>
             </div>
           </div>
+          )}
         </div>
 
         <div className="main-content">
@@ -231,6 +333,7 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
                   )}
                 </div>
                 <AudioPlayer
+                  ref={audioPlayerRef}
                   testId={testId}
                   currentSegment={{
                     startTime: currentTranscript.startTime,
@@ -242,9 +345,12 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
               <div className="transcript-content">
                 <TranscriptRenderer
                   transcript={currentTranscript.transcript}
+                  transcriptId={currentTranscript.id}
                   practiceMode="practice"
                   onAnswerChange={handleAnswerChange}
-                  onStatsChange={handleStatsChange}
+                  onIncorrectAnswer={handleIncorrectAnswer}
+                  onBlanksStateChange={handleBlanksStateChange}
+                  initialBlanksState={blanksState}
                 />
               </div>
 

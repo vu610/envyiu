@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, forwardRef, useImperativeHandle } from 'react';
 
 interface AudioPlayerProps {
   testId: string;
@@ -7,18 +7,25 @@ interface AudioPlayerProps {
     endTime: number;
   } | null;
   onTimeUpdate?: (currentTime: number) => void;
+  onReplayRequest?: () => void;
 }
 
-const AudioPlayer: React.FC<AudioPlayerProps> = ({
+// Expose replay function through ref
+export interface AudioPlayerRef {
+  replayAroundCurrentTime: () => void;
+}
+
+const AudioPlayer = forwardRef<AudioPlayerRef, AudioPlayerProps>(({
   testId,
   currentSegment,
   onTimeUpdate
-}) => {
+}, ref) => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const prevSegmentRef = useRef<{startTime: number; endTime: number} | null>(null);
 
   // Load audio file
   useEffect(() => {
@@ -27,7 +34,20 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
 
       const handleLoadedData = () => {
         console.log('Audio loaded successfully:', audio.src);
-        console.log('Audio duration:', audio.duration);
+        console.log('Audio duration:', audio.duration, 'seconds');
+
+        // Check if currentSegment times are valid
+        if (currentSegment) {
+          if (currentSegment.startTime > audio.duration) {
+            console.error('Segment startTime is beyond audio duration!', {
+              startTime: currentSegment.startTime,
+              audioDuration: audio.duration
+            });
+            setError(`Lỗi: Thời gian bắt đầu (${currentSegment.startTime}s) vượt quá độ dài audio (${Math.round(audio.duration)}s)`);
+            return;
+          }
+        }
+
         setIsLoading(false);
         setError(null);
       };
@@ -74,9 +94,6 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
       audio.addEventListener('error', handleError);
       audio.addEventListener('timeupdate', handleTimeUpdate);
 
-      // Force load
-      audio.load();
-
       return () => {
         audio.removeEventListener('loadstart', handleLoadStart);
         audio.removeEventListener('loadeddata', handleLoadedData);
@@ -93,9 +110,9 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
 
     try {
       const audio = audioRef.current;
-      
-      // Set to start time if not already there
-      if (Math.abs(audio.currentTime - currentSegment.startTime) > 1) {
+
+      // Set to start time if not already in segment range
+      if (audio.currentTime < currentSegment.startTime || audio.currentTime >= currentSegment.endTime) {
         audio.currentTime = currentSegment.startTime;
       }
 
@@ -143,13 +160,66 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
     }
   };
 
-  // Reset when segment changes
+  // Replay audio around current time (2s before to 2s after)
+  const replayAroundCurrentTime = async () => {
+    if (!audioRef.current || !currentSegment) return;
+
+    try {
+      const audio = audioRef.current;
+      const originalPos = audio.currentTime;
+
+      // Calculate replay range (2s before to 2s after current position)
+      const replayStart = Math.max(originalPos - 2, currentSegment.startTime);
+      const replayEnd = Math.min(originalPos + 2, currentSegment.endTime);
+
+      console.log('Replay range:', { originalPos, replayStart, replayEnd });
+
+      // Create a one-time event listener to stop at replay end
+      const handleTimeUpdate = () => {
+        if (audio.currentTime >= replayEnd) {
+          console.log('Replay finished, stopping and returning to original position');
+          audio.removeEventListener('timeupdate', handleTimeUpdate);
+          handlePause();
+          audio.currentTime = originalPos;
+        }
+      };
+
+      // Add the event listener
+      audio.addEventListener('timeupdate', handleTimeUpdate);
+
+      // Set to replay start position and play
+      audio.currentTime = replayStart;
+      await audio.play();
+      setIsPlaying(true);
+
+    } catch (err) {
+      console.error('Error replaying audio:', err);
+    }
+  };
+
+  // Expose replay function through ref
+  useImperativeHandle(ref, () => ({
+    replayAroundCurrentTime
+  }), [currentSegment]);
+
+  // Reset when segment actually changes
   useEffect(() => {
     if (audioRef.current && currentSegment) {
-      handlePause();
-      audioRef.current.currentTime = currentSegment.startTime;
+      const prev = prevSegmentRef.current;
+      const hasChanged = !prev ||
+                        prev.startTime !== currentSegment.startTime ||
+                        prev.endTime !== currentSegment.endTime;
+
+      if (hasChanged) {
+        handlePause();
+        audioRef.current.currentTime = currentSegment.startTime;
+        prevSegmentRef.current = {
+          startTime: currentSegment.startTime,
+          endTime: currentSegment.endTime
+        };
+      }
     }
-  }, [currentSegment]);
+  }, [currentSegment?.startTime, currentSegment?.endTime]);
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -244,6 +314,8 @@ const AudioPlayer: React.FC<AudioPlayerProps> = ({
       )}
     </>
   );
-};
+});
+
+AudioPlayer.displayName = 'AudioPlayer';
 
 export default AudioPlayer;

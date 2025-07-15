@@ -1,167 +1,163 @@
 [
-
-      {
-        "id": "q32-34",
-        "label": "Questions 32-34",
-        "startTime": 1199,
-        "endTime": 1228.5,
-        "transcript": "Matteo, do you have time to help me organize the [storage] room? The construction crew's going to be starting [renovations] on the lobby next week. We need to make [space] to store the lobby furniture. Actually, I know the plan is to [replace] those tables and chairs. Maybe we should just [donate] them now rather than putting them in storage. Good idea. I'll do some [research] to see which organizations accept [donations] of furniture. I'm sure there are [several] in the area."
-      },
-      {
-        "id": "q35-37",
-        "label": "Questions 35-37",
-        "startTime": 1314.5,
-        "endTime": 1345.5,
-        "transcript": "Hi Liam, we're really glad to have you join our [team]. The [harvest] season is our busiest. I'm [excited] to get started. Let me introduce you to [Brian]. He will take you out to the [berry] fields for your training. Hi Liam, here's a pair of [gloves] for you to use. Thanks. The berry picking is really [straightforward]. But it's important that you get plenty of [water] and stay hydrated in this heat. I brought a big [bottle] of it with me, so I should be fine."
-      },
-      {
-        "id": "q38-40",
-        "label": "Questions 38-40",
-        "startTime": 1388.5,
-        "endTime": 1422.5,
-        "transcript": "Welcome to my gardening [podcast]. I'm Rajesh Varma, and today I'm here with Sojin Lee, a [botanist] from Denton University who recently developed a new [hybrid] flower. Could you tell us more, Professor Lee? Certainly. I developed a new type of [rose]. It's special because it [blooms] longer than any other rose. That's interesting. Is it [difficult] to grow? Not if it's planted under the right [conditions]. Next month, the rose will be [featured] at the botanical show downtown. I hope your listeners will come to [see] it."
-      },
-      {
-        "id": "q41-43",
-        "label": "Questions 41-43",
-        "startTime": 1465.5,
-        "endTime": 1499.5,
-        "transcript": "So, Vivek, I think our employees could benefit from some more [training]. How about using this [software] application that I found? The app provides a [platform] for uploading our own training videos. And employees could view them on their [phones] at any time. You know, I've heard that those online programs help employees retain [knowledge], but aren't those apps [expensive]? Actually, the cost is [reasonable], and the website has some interesting [reviews] from other businesses that have used the app and found it helpful."
-      },
-      {
-        "id": "q44-46",
-        "label": "Questions 44-46",
-        "startTime": 1549,
-        "endTime": 1583.5,
-        "transcript": "Hi Christina, did you have a chance to look over the [applications] from our sales representatives who are interested in the new team [leader] role? We'll need to decide on a team leader [soon]. I did. I really liked Amanda Diop's [application]. She's the one who [signed] that deal with Walliston Corporation. I agree. That was an [impressive] deal. Walliston is one of our [biggest] clients now. I think Amanda would be a great [choice]. Okay, I'm glad we're on the same [page]. I'll complete the [paperwork] and send it to the human resources department later today."
-      },
-      {
-        "id": "q47-49",
-        "label": "Questions 47-49",
-        "startTime": 1610.5,
-        "endTime": 1650.5,
-        "transcript": "Thanks for agreeing to this [interview] for our upcoming [article] in the Thomasville Gazette, Ms. Haddad. Of course. As you know, the city council is proposing the implementation of a [road] tax, and I want to make sure the [public] is informed about it. Well, we like to keep our [readers] in the know, so we have a long list of questions for you. I'll start. What does the city plan to do with this tax [revenue], Ms. Haddad? The money will be used to add [bicycle] lanes citywide, which I'm excited about. Bicycle lanes should reduce [traffic] and promote health. Some business owners are [concerned] about losing street parking. Are you worried about that?"
-      },
-      {
-        "id": "q50-52",
-        "label": "Questions 50-52",
-        "startTime": 1673.5,
-        "endTime": 1710.5,
-        "transcript": "Good morning, Ms. Gomez. I wanted to update you on the [travel] plans for your meeting with Scony [Department] Store. Thanks for taking care of that. They're prospective [clients], and I've been so [busy] sending them samples and preparing my presentation that I haven't given a thought to my reservations. Happy to help. I've confirmed your [plane] reservation. Just remember, Villa Air only allows one free piece of [carry-on] luggage. Otherwise, there'll be an extra [charge]. Okay. Can you [forward] the plane ticket confirmation, please? I'll [email] you right now."
-      },
-      {
-        "id": "q53-55",
-        "label": "Questions 53-55",
-        "startTime": 1734,
-        "endTime": 1765.5,
-        "transcript": "Hi, I'm Marcel from Novik Solutions. Glad you could stop by my [trade] show booth today. Nice to meet you. I'm Sylvia from Media [Futurescapes]. So, what type of [product] does your company provide? We create [accounting] software so that companies can do their own accounting. Currently, I'm showcasing a new [version] for companies with under fifty employees. Well, we have about [two hundred] employees. I understand. Here's a [chart] that provides an overview of our complete range of products."
-      },
-      {
-        "id": "q56-58",
-        "label": "Questions 56-58",
-        "startTime": 1811.5,
-        "endTime": 1849.5,
-        "transcript": "Rodrigo, aren't we scheduled to start the [seal] coating job for the street [parking] around Bevelton Shopping Center next week? We were going to start those [repairs] on Monday, but I've been looking at the weather. It's going to [rain] all weekend. I think we should [reschedule]. Right. We can't add a protective [layer] to the asphalt when it's wet. I'll contact the property [manager] at the shopping center to discuss alternative dates. Okay. Just so you know, we've received a few new [requests] for consultations on our road repair services. I'll try to [slot] those in for Monday instead."
-      },
-      {
-        "id": "q59-61",
-        "label": "Questions 59-61",
-        "startTime": 1874,
-        "endTime": 1911.5,
-        "transcript": "Tasneem, I've been looking at the [production] process for soaps in our facility, and I think there is room for [improvement]. Improvements that could [decrease] our production time? Yes, consider this. Once the soap mixtures are poured into the molds, employees have to [carry] the batches across the room. I see what you mean. If we [reinstalled] the drying racks closer to the mixing station, they wouldn't have to walk as far. Exactly. A small [change] like that can have a big effect on total output. But wouldn't that be [expensive]? Let me show you the cost [projection]."
-      },
-      {
-        "id": "q62-64",
-        "label": "Questions 62-64",
-        "startTime": 1980.5,
-        "endTime": 2012.5,
-        "transcript": "I was just looking at the [supply] request form you submitted for our [engineering] department. Yes? I think you might have made a [mistake]. Do we really need that many computer [mice]? Oh, that is a [mistake]. I meant to request [two]. Okay, great. I did think that was [strange], given that there are only [fifteen] of us in our department. Thanks for [catching] that. Do you know when the supplies will get [here]? I'll place the [order] this afternoon, so they'll probably arrive next [week]."
-      },
-      {
-        "id": "q65-67",
-        "label": "Questions 65-67",
-        "startTime": 2030.5,
-        "endTime": 2068.5,
-        "transcript": "Welcome to Halcyon [Florals]. How can I help you? Hi, I'm planning the Lambert Evans [wedding] that's taking place this weekend. I received an email this morning that there's a [problem] with the flowers I ordered for the floral arrangements. Yes, unfortunately, my supplier notified me that they're out of [stock] because of a shortage. I'm sorry, but you'll have to choose a [replacement] for the lilies. I know my client likes [orchids], but I'm guessing those are too [expensive]. We'll still need a flower that's under [five] dollars per stem. Well, what about [these]? They fit within your budget. Those will be [perfect]."
-      },
-      {
-        "id": "q68-70",
-        "label": "Questions 68-70",
-        "startTime": 2101.5,
-        "endTime": 2136.5,
-        "transcript": "I think I've [inspected] enough to determine a fair market value for your store. Okay. You have the [paperwork] verifying that I replaced my roof last year, right? Buyers look for properties that don't need major [repairs]. I do have [that]. And you're right, recent repairs are a [factor] that add to the value of a property. The historic [windows] will be a selling point, I think. They're made of hand-blown [glass]. All the storefronts in this row of shops have them. They do add [character]. Now, I need to walk around with my [camera] to take some photos to file with my paperwork."
-      },
-
-      {
-        "id": "q71-73",
-        "label": "Questions 71-73",
-        "startTime": 2295.5,
-        "endTime": 2330.5,
-        "transcript": "Are you furnishing a [small] apartment? Go to Jill's [bedstore].com and check out Jill's [cabinet] bed. This unique bed fits into a hardwood [cabinet], becoming [compact] and saving you space. When you need to use it, just [open] the cabinet and unfold it to set it up. And this month only, we're offering listeners a special [deal]. If you use the [code] 623Z to order on our website, we'll throw in two free [pillows] with your purchase. So visit Jill's bedstore.com to start enjoying a more [spacious] apartment."
-      },
-      {
-        "id": "q74-76",
-        "label": "Questions 74-76",
-        "startTime": 2375.5,
-        "endTime": 2405.5,
-        "transcript": "For the rest of today, it is expected to remain [dry] and cloudy in the Jonesdale area. But beginning [tomorrow], we'll see colder temperatures and moderate [snowfall]. So please remember to put on a heavy [coat] if you plan on doing anything outdoors. As we head into next [week], it'll finally start to feel like [spring]. Okay, next up, we'll be covering our local [sports] teams' recent events, including a big [victory] last night."
-      },
-      {
-        "id": "q77-79",
-        "label": "Questions 77-79",
-        "startTime": 2429.5,
-        "endTime": 2464,
-        "transcript": "This is Brilliant Watch [Repair] calling about the antique [wrist] watch that you dropped off yesterday. As you mentioned, one of the watch [hands] was frequently skipping ahead, so we replaced the [battery]. That seemed to [fix] the issue. However, because the watch is quite [old], we also took it apart to give it a good [cleaning]. In the future, we suggest bringing it in for basic [maintenance] once every three years to keep it in good condition. The watch is [ready] for you at any time. Just be aware that [tomorrow] is a national holiday and we'll be [closed]. Thanks."
-      },
-      {
-        "id": "q80-82",
-        "label": "Questions 80-82",
-        "startTime": 2507.5,
-        "endTime": 2542.5,
-        "transcript": "We are here tonight to [celebrate] Fritz Schneider's outstanding service to the company on the eve of his [retirement]. Fritz has been with Elta [Footwear] since its inception, and without him, we wouldn't be where we are today. With unfailing [optimism], he has provided consistent [leadership] to help us grow as a company. Thanks largely to his [efforts], we now produce more than twenty-five lines of athletic footwear. We will [miss] him, but we wish him [well]. And now, I'd like to share a short [video] with some highlights of Fritz's many years with Elta."
-      },
-      {
-        "id": "q83-85",
-        "label": "Questions 83-85",
-        "startTime": 2593,
-        "endTime": 2625.5,
-        "transcript": "This is Yulia, the building [manager]. I'm calling to let you know that workers are coming [tomorrow] morning to replace a defective water pipe under the pavement in front of your apartment. It should only take a few [hours] to complete, but I know you sometimes work from [home], and they'll be using loud [machinery]. Sorry this is such short [notice]. Part of the pipe runs next to a telephone [pole], so I was required to apply for a [permit] to have the work done safely. I thought approval would take at least a [week], but it was issued [yesterday]."
-      },
-      {
-        "id": "q86-88",
-        "label": "Questions 86-88",
-        "startTime": 2672.5,
-        "endTime": 2700,
-        "transcript": "I called this quick [meeting] for hospital staff. Our wireless [internet] has gone down, and we are in the process of getting it [restored]. But don't worry, hard-wired [access] is still available, so all doctors, nurses, and essential staff will still be able to use the [desktop] computers at each workstation. However, our [patients] will be wondering why they can't connect to the Wi-Fi. So please remember to let them know what's going [on]."
-      },
-      {
-        "id": "q89-91",
-        "label": "Questions 89-91",
-        "startTime": 2743.5,
-        "endTime": 2779.5,
-        "transcript": "As a consulting [nutritionist], I'll work with your company [cafeteria] to review the items that are currently sold and suggest updates. Consuming less [meat] is not only better for our health, but is also better for the [environment]. And consider this interesting fact: a recent [study] of thousands of cafeteria meals shows that when additional [vegetarian] options are offered, there is a significant [increase] in the number of vegetarian meals consumed. Some of you have expressed [concern] that I might ask you to completely [overhaul] the entire menu. Well, small [changes] can have surprising results."
-      },
-      {
-        "id": "q92-94",
-        "label": "Questions 92-94",
-        "startTime": 2807.5,
-        "endTime": 2844.5,
-        "transcript": "We've received [feedback] from one of our major clients. The most recent [advertisements] we created for social media increased [traffic] to our client's website by twenty-six percent, which is great. In other news, we're on [track] to exceed our annual [goal] in terms of revenue. Having said that, [forty] percent of our business comes from [two] clients, and either could [back] out at any time. We plan to ask existing clients to [recommend] our ad services to their business contacts. As an [incentive], we'll offer a [discount] to those whose referrals result in new business for us."
-      },
-      {
-        "id": "q95-97",
-        "label": "Questions 95-97",
-        "startTime": 2875,
-        "endTime": 2919.5,
-        "transcript": "Welcome to the annual Chesterfield Community [Festival]. I have a few quick announcements. First, thank you to all of our [vendors]. They were selected because they use [sustainable], environmentally friendly practices to produce their goods. We know protecting the [environment] is important to our community. Second, there are still a few [tickets] available for tonight's jazz concert. You can stop by Marta's [Treats], next to Way Family Farms, to buy a ticket. Finally, remember that we are no longer handing out [paper] programs. You can [download] the event program from our website at www.chesterfieldcommunityfestival.com."
-      },
-      {
-        "id": "q98-100",
-        "label": "Questions 98-100",
-        "startTime": 2953.5,
-        "endTime": 2991.5,
-        "transcript": "I hope you enjoyed the conference's [keynote] speaker, Ms. Olabisi Adewale. What a phenomenal [speech]. If you're interested in more of what she has to say about running a [business], her latest [book] is for sale in the lobby. It's definitely an engaging read. The rest of the conference is [ahead] of you now. We're excited that this year, because of popular [demand] and all the [feedback] we received, we've added an additional [day] to the conference offerings. And before you head off to your [sessions], I wanted to announce a [change] of location for the 12:30 session today. It's been [moved], and the schedule board has been [updated]."
-      }
-    
-  
+  {
+    "id": "q32-34",
+    "label": "Questions 32-34",
+    "startTime": 839.0,
+    "endTime": 868.8,
+    "transcript": "Matteo, do you have [time] to help me [organize] the [storage room]? The [construction crew's] going to be starting [renovations] on the [lobby] next week. We need to make [space] to [store] the lobby [furniture]. Actually, I know the [plan] is to [replace] those [tables] and [chairs]. Maybe we should just [donate] them now rather than putting them in [storage]. Good idea. I'll do some [research] to see which [organizations] accept [donations] of [furniture]. I'm sure there are [several] in the area."
+  },
+  {
+    "id": "q35-37",
+    "label": "Questions 35-37",
+    "startTime": 915.0,
+    "endTime": 945.5,
+    "transcript": "Hi Liam, we're really [glad] to have you [join] our [team]. The [harvest season] is our [busiest]. I'm [excited] to get [started]. Let me [introduce] you to [Brian]. He will take you out to the [berry fields] for your [training]. Hi Liam. Here's a [pair] of [gloves] for you to use. Thanks. The [berry picking] is really [straightforward], but it's [important] that you get [plenty] of [water] and stay [hydrated] in this [heat]. I brought a [big bottle] of it with me, so I should be [fine]."
+  },
+  {
+    "id": "q38-40",
+    "label": "Questions 38-40",
+    "startTime": 989.8,
+    "endTime": 1022.5,
+    "transcript": "Welcome to my [gardening podcast]. I'm [Rajesh Varma], and today I'm here with [Sojin Lee], a [botanist] from [Denton University] who recently [developed] a new [hybrid flower]. Could you tell us more, [Professor Lee]? Certainly. I [developed] a new type of [rose]. It's [special] because it [blooms longer] than any other rose. That's [interesting]. Is it [difficult] to [grow]? Not if it's [planted] under the [right conditions]. [Next month], the rose will be [featured] at the [botanical show] downtown. I hope your [listeners] will come to [see it]."
+  },
+  {
+    "id": "q41-43",
+    "label": "Questions 41-43",
+    "startTime": 1067.0,
+    "endTime": 1099.0,
+    "transcript": "So, Vivek, I think our [employees] could [benefit] from some more [training]. How about using this [software application] that I found? The [app] provides a [platform] for [uploading] our own [training videos], and employees could [view them] on their [phones] at [any time]. You know, I've heard that those [online programs] help employees [retain knowledge], but aren't those [apps expensive]? Actually, the [cost] is [reasonable], and the [website] has some [interesting reviews] from other [businesses] that have used the [app] and found it [helpful]."
+  },
+  {
+    "id": "q44-46",
+    "label": "Questions 44-46",
+    "startTime": 1151.0,
+    "endTime": 1183.5,
+    "transcript": "Hi Christina. Did you have a [chance] to look over the [applications] from our [sales representatives] who are [interested] in the new [team leader role]? We'll need to [decide] on a [team leader] soon. I did. I really liked [Amanda Diop's application]. She's the one who [signed] that [deal] with [Walliston Corporation]. I agree. That was an [impressive deal]. [Walliston] is one of our [biggest clients] now. I think [Amanda] would be a [great choice]. Okay, I'm glad we're on the [same page]. I'll [complete] the [paperwork] and [send it] to the [human resources department] later today."
+  },
+  {
+    "id": "q47-49",
+    "label": "Questions 47-49",
+    "startTime": 1231.8,
+    "endTime": 1270.5,
+    "transcript": "Thanks for [agreeing] to this [interview] for our [upcoming article] in the [Thomasville Gazette], Ms. Haddad. Of course. As you know, the [city council] is [proposing] the [implementation] of a [road tax], and I want to make sure the [public] is [informed] about it. Well, we like to keep our [readers] in the [know], so we have a [long list] of [questions] for you. I'll start. What does the [city] plan to do with this [tax revenue], Ms. Haddad? The [money] will be used to add [bicycle lanes] citywide, which I'm [excited] about. [Bicycle lanes] should [reduce traffic] and [promote health]. Some [business owners] are [concerned] about [losing] street [parking]. Are you [worried] about that?"
+  },
+  {
+    "id": "q50-52",
+    "label": "Questions 50-52",
+    "startTime": 1315.0,
+    "endTime": 1350.5,
+    "transcript": "Good morning, Ms. Gomez. I wanted to [update] you on the [travel plans] for your [meeting] with [Sny Department Store]. Thanks for taking [care] of that. They're [prospective clients], and I've been so [busy] sending them [samples] and [preparing] my [presentation] that I haven't given a thought to my [reservations]. Happy to help. I've [confirmed] your [plane reservation]. Just remember, [Villa Air] only allows [one free piece] of [carry-on luggage]. Otherwise, there'll be an [extra charge]. Okay. Can you [forward] the [plane ticket confirmation], please? I'll [email] you right now."
+  },
+  {
+    "id": "q53-55",
+    "label": "Questions 53-55",
+    "startTime": 1395.0,
+    "endTime": 1425.5,
+    "transcript": "Hi, I'm [Marcel] from [Novic Solutions]. Glad you could stop by my [trade show booth] today. Nice to meet you. I'm [Sylvia] from [Media Futurescapes]. So, what [type] of [product] does your company provide? We create [accounting software] so that companies can do their [own accounting]. Currently, I'm [showcasing] a [new version] for companies with [under 50 employees]. Well, we have about [200 employees]. I understand. Here's a [chart] that provides an [overview] of our [complete range] of [products]."
+  },
+  {
+    "id": "q56-58",
+    "label": "Questions 56-58",
+    "startTime": 1472.0,
+    "endTime": 1509.5,
+    "transcript": "Rodrigo, aren't we [scheduled] to start the [seal coating job] for the [street parking] around [Bevelton Shopping Center] next week? We were going to [start] those [repairs] on [Monday], but I've been looking at the [weather]. It's going to [rain] all weekend. I think we should [reschedule]. Right. We can't add a [protective layer] to the [asphalt] when it's [wet]. I'll [contact] the [property manager] at the [shopping center] to discuss [alternative dates]. Okay. Just so you know, we've received a few [new requests] for [consultations] on our [road repair services]. I'll try to [slot those in] for [Monday] instead."
+  },
+  {
+    "id": "q59-61",
+    "label": "Questions 59-61",
+    "startTime": 1555.0,
+    "endTime": 1591.8,
+    "transcript": "Tasneem, I've been looking at the [production process] for [soaps] in our [facility], and I think there's [room] for [improvement]. Improvements that could [decrease] our [production time]? Yes. Consider this. Once the [soap mixtures] are [poured] into the [molds], employees have to [carry] the [batches] across the room. I see what you mean. If we [reinstalled] the [drying racks] [closer] to the [mixing station], they wouldn't have to [walk] as far. Exactly. A [small change] like that can have a [big effect] on [total output]. But wouldn't that be [expensive]? Let me show you the [cost projection]."
+  },
+  {
+    "id": "q62-64",
+    "label": "Questions 62-64",
+    "startTime": 1634.0,
+    "endTime": 1672.5,
+    "transcript": "I was just looking at the [supply request form] you submitted for our [engineering department]. Yes? I think you might have made a [mistake]. Do we really need [that many] [computer mouses]? Oh, that is a [mistake]. I meant to [request two]. Okay, great. I did think that was [strange], given that there are only [15 of us] in our [department]. Thanks for [catching that]. Do you know when the [supplies] will get here? I'll [place the order] this afternoon, so they'll probably [arrive] next week."
+  },
+  {
+    "id": "q65-67",
+    "label": "Questions 65-67",
+    "startTime": 1731.0,
+    "endTime": 1768.8,
+    "transcript": "Welcome to [Halcyon Florals]. How can I help you? Hi, I'm [planning] the [Lambert Evans wedding] that's taking place this [weekend]. I received an [email] this morning that there's a [problem] with the [flowers] I ordered for the [floral arrangements]. Yes. Unfortunately, my [supplier] notified me that they're [out of stock] because of a [shortage]. I'm sorry, but you'll have to choose a [replacement] for the [lilies]. I know my [client] likes [orchids], but I'm guessing those are [too expensive]. We'll still need a [flower] that's [under five dollars] per stem. Well, what about these? They [fit] within your [budget]. Those will be [perfect]."
+  },
+  {
+    "id": "q68-70",
+    "label": "Questions 68-70",
+    "startTime": 1822.0,
+    "endTime": 1856.5,
+    "transcript": "I think I've [inspected] enough to determine a [fair market value] for your [store]. Okay. You have the [paperwork] verifying that I [replaced] my [roof] last year, right? [Buyers] look for properties that don't need [major repairs]. I do have that. And you're right, [recent repairs] are a factor that [add] to the [value] of a property. The [historic windows] will be a [selling point], I think. They're made of [hand-blown glass]. All the [storefronts] in this [row of shops] have them. They do add [character]. Now, I need to walk around with my [camera] to take some [photos] to [file] with my [paperwork]."
+  },
+  {
+    "id": "q71-73",
+    "label": "Questions 71-73",
+    "startTime": 1936.0,
+    "endTime": 1970.0,
+    "transcript": "Are you [furnishing] a [small apartment]? Go to [jillsbedstore.com] and check out [Jill's cabinet bed]. This [unique bed] fits into a [hardwood cabinet], becoming [compact] and [saving you space]. When you need to use it, just [open] the [cabinet] and [unfold] it to set it up. And [this month only], we're offering listeners a [special deal]. If you use the [code 623Z] to order on our [website], we'll throw in [two free pillows] with your [purchase]. So visit [jillsbedstore.com] to start enjoying a more [spacious apartment]."
+  },
+  {
+    "id": "q74-76",
+    "label": "Questions 74-76",
+    "startTime": 2016.0,
+    "endTime": 2045.5,
+    "transcript": "For the [rest of today], it is expected to remain [dry] and [cloudy] in the [Jonesdale area]. But [beginning tomorrow], we'll see [colder temperatures] and [moderate snowfall]. So please remember to put on a [heavy coat] if you plan on doing anything [outdoors]. As we head into [next week], it'll finally start to [feel] like [spring]. Okay, [next up], we'll be covering our [local sports teams'] recent [events], including a [big victory] last night."
+  },
+  {
+    "id": "q77-79",
+    "label": "Questions 77-79",
+    "startTime": 2090.8,
+    "endTime": 2124.0,
+    "transcript": "This is [Brilliant Watch Repair] calling about the [antique wristwatch] that you [dropped off] yesterday. As you mentioned, one of the [watch hands] was frequently [skipping ahead], so we [replaced] the [battery]. That seemed to [fix] the [issue]. However, because the [watch] is quite [old], we also took it apart to give it a [good cleaning]. In the future, we suggest [bringing it in] for [basic maintenance] once [every three years] to keep it in [good condition]. The [watch] is [ready] for you at [any time]. Just be aware that [tomorrow] is a [national holiday] and we'll be [closed]. Thanks."
+  },
+  {
+    "id": "q80-82",
+    "label": "Questions 80-82",
+    "startTime": 2168.5,
+    "endTime": 2202.8,
+    "transcript": "We are here tonight to [celebrate] [Fritz Schneider's] [outstanding service] to the company on the eve of his [retirement]. [Fritz] has been with [Elta Footwear] since its [inception], and without him, we wouldn't be where we are [today]. With [unfailing optimism], he has provided [consistent leadership] to help us [grow] as a [company]. Thanks largely to his [efforts], today we produce more than [25 lines] of [athletic footwear]. We will [miss him], but we [wish him well]. And now, I'd like to share a [short video] with some [highlights] of [Fritz's] many years with [Elta]."
+  },
+  {
+    "id": "q83-85",
+    "label": "Questions 83-85",
+    "startTime": 2253.5,
+    "endTime": 2285.5,
+    "transcript": "This is [Julia], the [building manager]. I'm calling to let you know that [workers] are coming [tomorrow morning] to [replace] a [defective water pipe] under the [pavement] in front of your [apartment]. It should only take a [few hours] to complete, but I know you sometimes [work from home], and they'll be using [loud machinery]. Sorry this is such [short notice]. Part of the [pipe] runs next to a [telephone pole], so I was [required] to [apply] for a [permit] to have the work done [safely]. I thought [approval] would take at least a [week], but it was [issued] yesterday."
+  },
+  {
+    "id": "q86-88",
+    "label": "Questions 86-88",
+    "startTime": 2332.0,
+    "endTime": 2360.0,
+    "transcript": "I called this [quick meeting] for [hospital staff]. Our [wireless internet] has [gone down], and we are in the process of getting it [restored]. But don't worry, [hardwired access] is still [available], so all [doctors], [nurses], and [essential staff] will still be able to use the [desktop computers] at each [workstation]. However, our [patients] will be wondering why they [can't connect] to the [Wi-Fi]. So please remember to [let them know] what's going on."
+  },
+  {
+    "id": "q89-91",
+    "label": "Questions 89-91",
+    "startTime": 2403.5,
+    "endTime": 2439.0,
+    "transcript": "As a [consulting nutritionist], I'll work with your [company cafeteria] to [review] the [items] that are currently sold and [suggest updates]. [Consuming less meat] is not only [better] for our [health], but is also [better] for the [environment]. And consider this [interesting fact]: a [recent study] of thousands of [cafeteria meals] shows that when [additional vegetarian options] are offered, there is a [significant increase] in the number of [vegetarian meals consumed]. Some of you have [expressed concern] that I might ask you to [completely overhaul] the [entire menu]. Well, [small changes] can have [surprising results]."
+  },
+  {
+    "id": "q92-94",
+    "label": "Questions 92-94",
+    "startTime": 2487.5,
+    "endTime": 2524.5,
+    "transcript": "We've received [feedback] from one of our [major clients]. The most [recent advertisements] we created for [social media] [increased traffic] to our client's [website] by [26%], which is great. In other news, we're [on track] to [exceed] our [annual goal] in terms of [revenue]. Having said that, [40%] of our [business] comes from [two clients], and either could [back out] at any time. We plan to ask [existing clients] to [recommend] our [ad services] to their [business contacts]. As an [incentive], we'll offer a [discount] to those whose [referrals] result in [new business] for us."
+  },
+  {
+    "id": "q95-97",
+    "label": "Questions 95-97",
+    "startTime": 2575.0,
+    "endTime": 2619.5,
+    "transcript": "Welcome to the [annual] [Chesterfield Community Festival]. I have a few [quick announcements]. First, thank you to all of our [vendors]. They were [selected] because they use [sustainable], [environmentally friendly] practices to produce their [goods]. We know [protecting] the [environment] is [important] to our community. Second, there are still a few [tickets available] for tonight's [jazz concert]. You can stop by [Marta's Treats], next to [Way Family Farms], to buy a [ticket]. Finally, remember that we are [no longer] handing out [paper programs]. You can [download] the [event program] from our [website] at [www.chesterfieldcommunityfestival.com]."
+  },
+  {
+    "id": "q98-100",
+    "label": "Questions 98-100",
+    "startTime": 2674.0,
+    "endTime": 2711.5,
+    "transcript": "I hope you [enjoyed] the conference's [keynote speaker], Ms. [Olabisi Adewale]. What a [phenomenal speech]. If you're [interested] in more of what she has to say about [running a business], her [latest book] is for [sale] in the [lobby]. It's definitely an [engaging read]. The rest of the [conference] is ahead of you now. We're [excited] that this year, because of [popular demand] and all the [feedback] we received, we've [added] an [additional day] to the [conference offerings]. And before you head off to your [sessions], I wanted to [announce] a [change of location] for the [12:30 session] today. It's been [moved], and the [schedule board] has been [updated]."
+  }
 ]

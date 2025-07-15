@@ -3,9 +3,12 @@ import './TranscriptRenderer.css';
 
 interface TranscriptRendererProps {
   transcript: string;
+  transcriptId: string;
   practiceMode: 'practice' | 'answer';
   onAnswerChange?: (answers: Record<string, string>) => void;
-  onStatsChange?: (stats: { total: number; correct: number; attempted: number }) => void;
+  onIncorrectAnswer?: () => void;
+  onBlanksStateChange?: (blanks: Record<string, BlankAnswer>) => void;
+  initialBlanksState?: Record<string, BlankAnswer>;
 }
 
 interface BlankAnswer {
@@ -18,9 +21,12 @@ interface BlankAnswer {
 
 const TranscriptRenderer: React.FC<TranscriptRendererProps> = ({
   transcript,
+  transcriptId,
   practiceMode: _practiceMode, // Unused but keeping for API compatibility
   onAnswerChange,
-  onStatsChange
+  onIncorrectAnswer,
+  onBlanksStateChange,
+  initialBlanksState
 }) => {
   const [blanks, setBlanks] = useState<Record<string, BlankAnswer>>({});
 
@@ -42,8 +48,8 @@ const TranscriptRenderer: React.FC<TranscriptRendererProps> = ({
         });
       }
 
-      // Thêm blank
-      const blankId = `blank_${blankIndex}`;
+      // Thêm blank với unique ID
+      const blankId = `${transcriptId}_blank_${blankIndex}`;
       const correctAnswer = match[1];
       
       parts.push({
@@ -188,29 +194,29 @@ const TranscriptRenderer: React.FC<TranscriptRendererProps> = ({
 
       setBlanks(updatedBlanks);
 
-      // Calculate and update stats
-      const allBlanks = Object.values(updatedBlanks);
-      const total = allBlanks.length;
-      const attempted = allBlanks.filter(b => b.hasBeenChecked).length;
-      const correct = allBlanks.filter(b => b.isCorrect).length;
+      // Send blanks state to parent
+      if (onBlanksStateChange) {
+        onBlanksStateChange(updatedBlanks);
+      }
 
+      // Send answers to parent
       if (onAnswerChange) {
         const answers: Record<string, string> = {};
-        allBlanks.forEach(blank => {
+        Object.values(updatedBlanks).forEach(blank => {
           answers[blank.id] = blank.userAnswer;
         });
         onAnswerChange(answers);
       }
 
-      if (onStatsChange) {
-        onStatsChange({ total, correct, attempted });
-      }
-
       // Only move to next input if answer is correct
       if (isCorrect) {
         focusInput('next', blankId);
+      } else {
+        // If incorrect, trigger audio replay and stay in the same input
+        if (onIncorrectAnswer) {
+          onIncorrectAnswer();
+        }
       }
-      // If incorrect, stay in the same input (user can try again or move manually)
     }
   };
 
@@ -239,10 +245,23 @@ const TranscriptRenderer: React.FC<TranscriptRendererProps> = ({
     return () => document.removeEventListener('keydown', handleGlobalKeyPress);
   }, []);
 
-  // Reset blanks when transcript changes
+  // Initialize blanks when transcript changes
   useEffect(() => {
-    setBlanks({});
-  }, [transcript]);
+    if (initialBlanksState && Object.keys(initialBlanksState).length > 0) {
+      // Filter blanks for current transcript only
+      const currentTranscriptBlanks = Object.keys(initialBlanksState)
+        .filter(key => key.startsWith(transcriptId))
+        .reduce((acc, key) => {
+          acc[key] = initialBlanksState[key];
+          return acc;
+        }, {} as Record<string, BlankAnswer>);
+
+      setBlanks(currentTranscriptBlanks);
+    } else {
+      // Reset to empty state
+      setBlanks({});
+    }
+  }, [transcript, transcriptId, initialBlanksState]);
 
   const parts = parseTranscript(transcript);
 

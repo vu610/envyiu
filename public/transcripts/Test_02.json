@@ -1,165 +1,163 @@
- [
-      {
-        "id": "q32-34",
-        "label": "Questions 32-34",
-        "startTime": 123.98,
-        "endTime": 148.28,
-        "transcript": "Good morning, Captain. We'll be [docking] at the port in [Kolkata] this evening, right? Actually, we had to [change course] overnight to avoid a [storm], so we're running [behind schedule]. But we should [arrive] early [tomorrow]. Well, that's [not too bad]. Oh, Hector has the [day off] today, so I'll need you to do the [morning rounds], starting with checking the [machinery] in the [engine room]. Of course. I'll [head there] now."
-      },
-      {
-        "id": "q35-37",
-        "label": "Questions 35-37",
-        "startTime": 151.98,
-        "endTime": 181.48,
-        "transcript": "Hi, I'm here to [schedule] some [personal training sessions]. OK. What are your [fitness goals]? I'd like to [lift weights] and [build strength]. I can [work with you] on that. Are you currently a [member] here? No, I'll also need to [sign up] for a [membership]. I saw [online] that you're running a [special] for new members: [fifty percent off] the first month's membership. Can I [sign up] for that? [Absolutely]. But before I get you signed up, let me [show you around] our [facility]."
-      },
-      {
-        "id": "q38-40",
-        "label": "Questions 38-40",
-        "startTime": 184.98,
-        "endTime": 214.48,
-        "transcript": "As you can see, this [Renaissance] [landscape painting] we acquired is in [bad condition]. We can't [display] it yet. Hmm, yes. This painting will need [significant] [restoration work]. I'll begin by [investigating] the artist's [color palette] and style to see how we should [repair] the [damaged areas]. You know, this would be a [stunning piece] to [unveil] at our [anniversary dinner] in June. And since it's a [big project] to finish by then, we should [get started right away]."
-      },
-      {
-        "id": "q41-43",
-        "label": "Questions 41-43",
-        "startTime": 220.98,
-        "endTime": 256.48,
-        "transcript": "Hi Ozan, do you have time to [review] some [slides] I'm [presenting] at a meeting on Thursday? Oh, is that the [meeting] with [Smith Incorporated]? Yes. I'm presenting them with our [updated] [marketing plan] for their chain of [bookstores]. You know, Smith Incorporated [prefers] [informal meetings]. I think just a [handout] highlighting how our marketing plan will [positively impact] their [book sales] would be enough. Really? Filo, you've [worked with] this [client] before. What do you think? Ozan is right. I think they'd [prefer] a meeting that was more of a [conversation] than a [presentation]."
-      },
-      {
-        "id": "q44-46",
-        "label": "Questions 44-46",
-        "startTime": 260.98,
-        "endTime": 301.48,
-        "transcript": "I heard that the [results] of your [experiment] were [better than you expected]. [Congratulations]! Thanks. I thought we'd have to run that [reaction] ten times before we got a [positive result], but we got it on the [third try]. You'll have to [write up] your results and [submit] them to the [research director]. That's [Ezra], right? Oh, Ezra's [leaving the company] next week. Oh, I [didn't know] that. I wonder if you'll be [promoted] to [fill her position]. I don't think so. I've never [managed] an entire [research group]. I hope to [get some experience] doing that [next quarter]."
-      },
-      {
-        "id": "q47-49",
-        "label": "Questions 47-49",
-        "startTime": 309.98,
-        "endTime": 350.48,
-        "transcript": "Now we'll move on to a [special segment] of our [news program] where we [highlight] new [local businesses] for our viewers. Today I'm talking with [Dhruv Bajaj], a [personal trainer] and [gym owner]. Thanks for coming into the [studio] today, Dhruv. Thanks for having me. I'm [excited] to tell you about the [gym] I just [opened last month]. It has [state-of-the-art equipment], and my [trainers] can work with clients at any stage in their [fitness journey]. Sounds great. How did you [get started] in this [line of work]? Well, I was an [athlete] in school, and when I [stopped competing], I wanted to continue doing something [fitness-related]. So I started [working as a trainer]."
-      },
-      {
-        "id": "q50-52",
-        "label": "Questions 50-52",
-        "startTime": 355.98,
-        "endTime": 396.48,
-        "transcript": "As [director], I'm delighted to [welcome] you to the [Redmond Aquatic Institute]. We're happy you'll be [producing content] for our [website]. I'm looking forward to [writing about] Redmond's [initiatives] in [marine biology]. Yes, the more [articles] the public can read about [threats] to [aquatic ecosystems], the better. [Public awareness] will help us get [funding] to meet our aim of [preserving] these ecosystems. This is [Roberto]. He's working on our [mangrove research project], which is the first one you'll [cover]. It's an [interesting project]. And what's exciting is that we've started using [drones] to [photograph] the area with the mangroves. So we have some [great images] you could use."
-      },
-      {
-        "id": "q53-55",
-        "label": "Questions 53-55",
-        "startTime": 401.98,
-        "endTime": 437.48,
-        "transcript": "Matthew, you're not planning to [cancel] Wednesday's [budget meeting], are you? I haven't sent out the [cancellation] yet, but our [research partners] in China are off this week for a [national holiday]. So there's [no point] in meeting. Why? Well, I've been looking at the [draft budget], and we didn't [allocate funds] for a [project leader]. Uh oh. I wonder [how that happened]. You're right. We need to [discuss] how to [fix that]. You know, we [allocated money] for a [trip to Singapore] to present our [preliminary findings]. We [don't really need] to do that."
-      },
-      {
-        "id": "q56-58",
-        "label": "Questions 56-58",
-        "startTime": 447.98,
-        "endTime": 487.48,
-        "transcript": "Hello, you've reached [tech support]. I'm calling from Ruben [Restaurant Equipment]. I recently [purchased] your [software] to keep track of my [warehouse inventory]. And I have a [question] about [setting alerts]. Sure. [How can I help]? Well, we've been getting an [alert] whenever the [inventory] for our [deep fryers] drops below ten, but we usually [don't stock many] of those because restaurants don't often need to replace them. So, can I [lower] the [alert level] for just those items? Yes. In the system, if you [click] on that product, you'll see a link that says '[set custom alert]', and you can set it to [any number] from there. I [see it]. [Thanks] for your help."
-      },
-      {
-        "id": "q59-61",
-        "label": "Questions 59-61",
-        "startTime": 505.98,
-        "endTime": 539.48,
-        "transcript": "I just spoke to the [garden director]. He wants us to [install] an [irrigation system] in the [rose garden] as well as the [magnolia grove]. He wants to be sure the flowers get [plenty of water] during the [hot summer months]. OK. Let's [walk over] there now and [take some measurements]. Then we can [figure out] what [materials] we'll need. Sure. We have some [extra parts] [left over] from when we worked on the [cherry trees]. I'll [check] what we have left after we [finish measuring] the rose garden."
-      },
-      {
-        "id": "q62-64",
-        "label": "Questions 62-64",
-        "startTime": 543.98,
-        "endTime": 573.48,
-        "transcript": "Good morning, Ms. Al-Johani. Sorry I'm a little [late]; [traffic] was [terrible]. That's okay. But our [rental office] will be [very busy] this morning. There's a big [education convention] in town starting today, and a lot of [attendees] from out of town have [reserved cars] to get to the [conference center]. Right. What do you want me to [do first]? I'd like you to start by [checking the batteries] in our [electric cars]. We want to be sure they're all [fully charged]."
-      },
-      {
-        "id": "q65-67",
-        "label": "Questions 65-67",
-        "startTime": 586.98,
-        "endTime": 632.48,
-        "transcript": "I've been on [vacation], so I [missed] our department's [meeting]. Can you give me an [update]? Well, all our [public programs] and [community events] are [on schedule]. Great. How about the [Janus Park project]? We're still planning on [planting trees] best suited for [residential areas], right? That's right. I'm working on the [public education] part now. There'll be a children's [poster competition] next month, which the [city mayor] will [judge]. Interesting. Is there a [prize]? The [winner] will get a [ribbon]. But all [participants] will get a [seedling] to plant at home. We'll be [giving away] the [tallest] of these four varieties, since it was the [most popular] in a [survey] of our residents."
-      },
-      {
-        "id": "q68-70",
-        "label": "Questions 68-70",
-        "startTime": 644.98,
-        "endTime": 693.48,
-        "transcript": "Hi, I'd like a [large black coffee] and an [egg and cheese croissant], please. Sure. That'll be [eight dollars]. Are you a Shelby's [Preferred Customer]? Uh, no, I'm not, but I do have an [Easy Cash card]. Great. Let me [ring that up] for you. By the way, I'd like to [order breakfast] for my [team] tomorrow morning. Can I [place that order] [ahead of time]? Sure. Would you like to [do that now]? No, I'll [call you later] today when I know what everyone wants. Thanks for the [information]."
-      },
-    
-      {
-        "id": "q71-73",
-        "label": "Questions 71-73",
-        "startTime": 735.98,
-        "endTime": 758.48,
-        "transcript": "Hi Amina, this is [Sabine] calling from [Blue Drop Creations]. I just put the [earrings] and [necklaces] that you [ordered] from me in the [mail]. Because you've been a [customer] for over [ten years], I've also included a [special gift] in the package for you. It's a [case] for your [jewelry]. This is a [new product] that I'm starting to offer, so please [call me back] after you receive it. I'd really like to [hear your thoughts] on it."
-      },
-      {
-        "id": "q74-76",
-        "label": "Questions 74-76",
-        "startTime": 763.98,
-        "endTime": 798.48,
-        "transcript": "Good morning. This is [Brandon] from [Dakota Framing Company], [returning your call]. We received your [voicemail] about wanting to [frame] a [wedding picture]. There is no need to [print the photo] yourself; we prefer that you [email] us a [digital copy]. So, to answer your question, you can [complete] the whole [order online]. Just [visit our website], where you'll [fill in] your choices for [photo size] and the [frame], and [upload] your photo. And for a small [extra cost], we'll [guarantee] to [replace] your frame in case of [damage]. Please be sure to [check that box] when you order."
-      },
-      {
-        "id": "q77-79",
-        "label": "Questions 77-79",
-        "startTime": 823.98,
-        "endTime": 858.48,
-        "transcript": "[Welcome] all to this week's [training] in our series of [patient care programs]. Our [physical therapy center] is known for the [excellent care] we provide to our patients, and that's because of you, our [staff]. The training today will be about ways to [engage] the [patients] who reside in our facility through [playing games]. I've [prepared] different types of [activities] for us to try out, including some games that involve [mental stimulation] as well as [physical exercises]. But I have to let you know that today, I must [leave at noon]. [Next week] we'll try out [more of the games]."
-      },
-      {
-        "id": "q80-82",
-        "label": "Questions 80-82",
-        "startTime": 883.98,
-        "endTime": 918.48,
-        "transcript": "Are you a [certified] [commercial truck driver]? [Hoffman Oversized Haulers] is currently looking for [experienced] truck drivers to [join our team]. As our name suggests, we [transport] [oversized cargo] throughout the region. With Hoffman, drivers enjoy [flexible scheduling]. In fact, we're the [only company] in the region that allows employees to [determine] their [own work hours]. If you don't have [experience] working with [oversized loads], [training is available]. Please check out our [website] to learn more about our [open positions]. We can't wait to [work with you]."
-      },
-      {
-        "id": "q83-85",
-        "label": "Questions 83-85",
-        "startTime": 951.98,
-        "endTime": 981.48,
-        "transcript": "Hi Jinyu, I have some [exciting news]. The [Farmer's Table] [television program] wants to [feature our restaurant] in an upcoming episode. They'll be coming on [Wednesday] to [film] everyone at work in the kitchen during our [dinner service]. Since you're the [executive chef], I'll need you to [come in earlier] than usual to get everything [prepped] and set up. And just as a [reminder], I'm still planning to be [out of town] next week for the [Springdale Pastry and Dessert Festival]. [Thanks]!"
-      },
-      {
-        "id": "q86-88",
-        "label": "Questions 86-88",
-        "startTime": 1006.98,
-        "endTime": 1043.48,
-        "transcript": "Good evening and thank you for watching [Channel 4 News]. I'm here in [Rockville], a [suburb] in the metropolitan area. Rockville was recently [chosen] as the [site] of a multi-million dollar [electric vehicle battery factory]. This project [promises] to bring [thousands of jobs], both directly and indirectly, to the surrounding [community]. At a recent well-attended [public comment meeting], residents had a chance to [voice any opposition] to the project. [No one] made any [comments]. To [learn more] about this exciting development, [artist-rendered images] of the project are on display at the [City Hall] building."
-      },
-      {
-        "id": "q89-91",
-        "label": "Questions 89-91",
-        "startTime": 1051.98,
-        "endTime": 1080.48,
-        "transcript": "Tired of [losing things] on your [desk] because it's too [cluttered]? If so, the [Optimum Space Organizer] is the [perfect product] for you. Designed with [office employees] like you in mind, this product can make even the [messiest] of desks look [neat again]. Best of all, the organizer [adjusts] to [any size space] you may have on your desk. It can be as [narrow] or as [wide] as you need it to be, [within seconds]. If you [call] in the next [ten minutes], you'll receive a [thirty percent discount]."
-      },
-      {
-        "id": "q92-94",
-        "label": "Questions 92-94",
-        "startTime": 1105.98,
-        "endTime": 1152.48,
-        "transcript": "Thanks for [listening] to this [episode] of [Fabulous Foods]. Every week we [discuss] a different [vegetable] and ways to cook with it to [maximize flavor]. Now, before we get started, I'm [excited to announce] that I've been [collaborating] with Cartwell Kitchen Supplies to develop a [new line of cookware]. It'll be [released in November], but it's [available] for [pre-order] right now. Keep in mind, this product line will [not be available for long]. OK, let's move on to our program. With us today is [renowned chef] [Rebecca Murray] to talk about this week's vegetable: [eggplant]. Rebecca recently [launched] a [vegetarian restaurant] in New York that is getting [rave reviews] so far."
-      },
-      {
-        "id": "q95-97",
-        "label": "Questions 95-97",
-        "startTime": 1183.98,
-        "endTime": 1218.48,
-        "transcript": "[Attention passengers]. [Renovation work] to [upgrade] and [modernize] our train station is underway. We [apologize] for the [inconvenience] the [construction noise] may cause. Please note that [regional train schedules] are [not affected]. [Train 133] with service to [Washington D.C.] will be [arriving shortly]. All [passengers] to Washington, please [proceed] to [track 26B]. If you need [assistance] handling your [baggage], please speak to a [ticket agent] immediately. Train 133's [next stop] will be [Wilmington], followed by [Baltimore], and then Washington D.C."
-      },
-      {
-        "id": "q98-100",
-        "label": "Questions 98-100",
-        "startTime": 1233.98,
-        "endTime": 1272.48,
-        "transcript": "Hello everyone. I'm [Carmen Salazar], the [airport operations director], and I wanted to thank you for attending this [press conference]. As of this week, [construction] on the new [regional airport] is proceeding [on schedule] for two of the three terminals. Minor [design adjustments] to [Terminal A] have put the project slightly [behind schedule], and we anticipate about [two months] will be added to the construction time frame as a result. I'd also like to [mention] that we now have a [3D printed model] of this project. Please feel free to [visit our website] so you can [view it]."
-      }
-    ]
-  
+[
+  {
+    "id": "q32-34",
+    "label": "Questions 32-34",
+    "startTime": 843.0,
+    "endTime": 868.0,
+    "transcript": "Good morning, [captain]. We'll be docking at the port in [Kolkata] this evening, right? Actually, we had to [change course] overnight to avoid a [storm], so we're running [behind schedule]. But we should [arrive] early tomorrow. Well, that's [not too bad]. Oh, Hector has the [day off] today. So I'll need you to do the [morning rounds], starting with checking the [machinery] in the [engine room]. Of course. I'll [head there] now."
+  },
+  {
+    "id": "q35-37",
+    "label": "Questions 35-37",
+    "startTime": 912.0,
+    "endTime": 941.0,
+    "transcript": "Hi, I'm here to [schedule] some [personal training] sessions. Okay, what are your [fitness goals]? I'd like to [lift weights] and build [strength]. I can [work with you] on that. Are you currently a [member] here? No, I'll also need to [sign up] for a [membership]. I saw online that you're running a [special] for new members, [fifty percent off] the first month's membership. Can I [sign up] for that? Absolutely. But before I get you signed up, let me [show you around] our [facility]."
+  },
+  {
+    "id": "q38-40",
+    "label": "Questions 38-40",
+    "startTime": 985.0,
+    "endTime": 1014.0,
+    "transcript": "As you can see, this [Renaissance] landscape [painting] we acquired is in [bad condition]. We can't [display] it yet. Hmm, yes. This painting will need [significant] restoration work. I'll begin by [investigating] the artist's [color palette] and style to see how we should repair the [damaged areas]. You know, this would be a [stunning piece] to unveil at our [anniversary dinner] in June. And since it's a [big project] to finish by then, we should get [started] right away."
+  },
+  {
+    "id": "q41-43",
+    "label": "Questions 41-43",
+    "startTime": 1061.0,
+    "endTime": 1096.0,
+    "transcript": "Hi, Ozan. Do you have time to [review] some [slides] I'm presenting at a [meeting] on Thursday? Oh, is that the meeting [with] Smith Incorporated? Yes. I'm presenting them with our [updated] [marketing plan] for their chain of [bookstores]. You know, Smith Incorporated prefers [informal meetings]. I think just a [handout] highlighting how our marketing plan will positively [impact] their [book sales] would be enough. Really? Filo, you've [worked] with this [client] before. What do you think? Ozan is [right]. I think they'd prefer a meeting that was more of a [conversation] than a [presentation]."
+  },
+  {
+    "id": "q44-46",
+    "label": "Questions 44-46",
+    "startTime": 1147.0,
+    "endTime": 1181.0,
+    "transcript": "I heard that the [results] of your [experiment] were better than you expected. [Congratulations]! Thanks. I thought we'd have to run that [reaction] ten times before we got a [positive result], but we got it on the [third try]. You'll have to [write up] your results and [submit] them to the [research director]. That's Ezra, [right]? Oh, Ezra's [leaving] the company next week. Oh, I didn't [know] that. I wonder if you'll be [promoted] to fill her [position]. I don't [think] so. I've never [managed] an entire [research group]. I hope to get some [experience] doing that next [quarter]."
+  },
+  {
+    "id": "q47-49",
+    "label": "Questions 47-49",
+    "startTime": 1230.0,
+    "endTime": 1270.0,
+    "transcript": "Now we'll move on to a [special segment] of our [news program] where we highlight new [local businesses] for our viewers. Today I'm talking with Dhruv Bajaj, a [personal trainer] and [gym owner]. Thanks for [coming] into the studio today, Dhruv. Thanks for [having me]. I'm [excited] to tell you about the gym I just [opened] last month. It has [state-of-the-art] equipment, and my trainers can work with [clients] at any stage in their [fitness journey]. Sounds great. How did you get [started] in this [line of work]? Well, I was an [athlete] in school, and when I stopped [competing], I wanted to continue doing something [fitness-related]. So I started [working] as a [trainer]."
+  },
+  {
+    "id": "q50-52",
+    "label": "Questions 50-52",
+    "startTime": 1316.0,
+    "endTime": 1356.0,
+    "transcript": "As [director], I'm delighted to [welcome] you to the [Redmond Aquatic Institute]. We're happy you'll be [producing content] for our [website]. I'm looking forward to [writing] about Redmond's initiatives in [marine biology]. Yes, the more [articles] the public can read about [threats] to aquatic [ecosystems], the better. [Public awareness] will help us get [funding] to meet our aim of [preserving] these ecosystems. This is Roberto. He's working on our [mangrove research] project, which is the [first one] you'll cover. It's an [interesting] project. And what's [exciting] is that we've started using [drones] to [photograph] the area with the mangroves. So we have some [great images] you could use."
+  },
+  {
+    "id": "q53-55",
+    "label": "Questions 53-55",
+    "startTime": 1402.0,
+    "endTime": 1437.0,
+    "transcript": "Matthew, you're not planning to [cancel] Wednesday's [budget meeting], are you? I haven't sent out the [cancellation] yet, but our [research partners] in China are off this week for a [national holiday], so there's no [point] in meeting. Why? Well, I've been looking at the [draft budget], and we didn't [allocate funds] for a [project leader]. Uh oh. I wonder how that [happened]. You're right. We need to [discuss] how to [fix] that. You know, we allocated [money] for a [trip] to Singapore to present our [preliminary findings]. We don't really [need] to do that."
+  },
+  {
+    "id": "q56-58",
+    "label": "Questions 56-58",
+    "startTime": 1488.0,
+    "endTime": 1526.0,
+    "transcript": "Hello, you've reached [tech support]. I'm calling from [Ruben Restaurant Equipment]. I recently [purchased] your [software] to keep track of my [warehouse inventory], and I have a question about [setting alerts]. Sure, how can I [help] you? Well, we've been getting an [alert] whenever the inventory for our [deep fryers] drops below ten, but we usually don't [stock] many of those because restaurants don't often need to [replace] them. So, can I [lower] the [alert level] for just those items? Yes. In the system, if you [click] on that product, you'll see a link that says '[set custom alert],' and you can set it to [any number] from there. I [see] it. Thanks for your [help]."
+  },
+  {
+    "id": "q59-61",
+    "label": "Questions 59-61",
+    "startTime": 1571.0,
+    "endTime": 1599.0,
+    "transcript": "I just spoke to the [garden director]. He wants us to [install] an [irrigation system] in the [rose garden] as well as the [magnolia grove]. He wants to be sure the [flowers] get plenty of [water] during the [hot summer] months. OK. Let's walk over there now and take some [measurements]. Then we can figure out what [materials] we'll need. Sure. We have some [extra parts] left over from when we worked on the [cherry trees]. I'll check what we have [left] after we finish [measuring] the rose garden."
+  },
+  {
+    "id": "q62-64",
+    "label": "Questions 62-64",
+    "startTime": 1644.0,
+    "endTime": 1673.0,
+    "transcript": "Good morning, Ms. Al-Johani. Sorry I'm a [little late]. [Traffic] was [terrible]. That's okay, but our [rental office] will be very [busy] this morning. There's a big [education convention] in town starting today, and a lot of [attendees] from out of town have [reserved cars] to get to the [conference center]. Right. What do you want me to do [first]? I'd like you to start by [checking] the [batteries] in our [electric cars]. We want to be sure they're all [fully charged]."
+  },
+  {
+    "id": "q65-67",
+    "label": "Questions 65-67",
+    "startTime": 1733.0,
+    "endTime": 1772.0,
+    "transcript": "I've been on [vacation], so I missed our [department's meeting]. Can you give me an [update]? Well, all our [public programs] and [community events] are on [schedule]. Great. How about the [Janus Park] project? We're still planning on [planting trees] best suited for [residential areas], right? That's right. I'm working on the [public education] part now. There'll be a [children's poster] competition next month, which the [city mayor] will judge. Interesting. Is there a [prize]? The winner will get a [ribbon], but all [participants] will get a [seedling] to plant at home. We'll be giving away the [tallest] of these four varieties, since it was the [most popular] in a survey of our [residents]."
+  },
+  {
+    "id": "q68-70",
+    "label": "Questions 68-70",
+    "startTime": 1825.0,
+    "endTime": 1853.0,
+    "transcript": "Hi, I'd like a [large black coffee] and an [egg and cheese croissant], please. Sure, that'll be [eight dollars]. Are you a [Shelby's preferred] customer? Uh, no, I'm not, but I do have an [Easy Cash] card. Great. Let me [ring that up] for you. By the way, I'd like to [order breakfast] for my [team] tomorrow morning. Can I place that order [ahead of time]? Sure. Would you like to do [that now]? No, I'll [call you later] today when I know what [everyone wants]. Thanks for the [information]."
+  },
+  {
+    "id": "q71-73",
+    "label": "Questions 71-73",
+    "startTime": 1936.0,
+    "endTime": 1958.0,
+    "transcript": "Hi, Amina. This is Sabine calling from [Blue Drop Creations]. I just put the [earrings] and [necklaces] that you ordered from me in the [mail]. Because you've been a [customer] for over [ten years], I've also included a [special gift] in the package for you. It's a [case] for your [jewelry]. This is a [new product] that I'm starting to offer, so please [call me back] after you receive it. I'd really like to hear your [thoughts] on it."
+  },
+  {
+    "id": "q74-76",
+    "label": "Questions 74-76",
+    "startTime": 2004.0,
+    "endTime": 2038.0,
+    "transcript": "Good morning. This is Brandon from [Dakota Framing Company], returning your call. We received your [voicemail] about wanting to [frame] a [wedding picture]. There is no need to [print] the photo yourself; we prefer that you [email] us a [digital copy]. So, to answer your question, you can [complete] the whole order [online]. Just visit our [website], where you'll fill in your choices for [photo size] and the frame, and [upload] your photo. And for a small [extra cost], we'll [guarantee] to [replace] your frame in case of [damage]. Please be sure to [check that box] when you order."
+  },
+  {
+    "id": "q77-79",
+    "label": "Questions 77-79",
+    "startTime": 2084.0,
+    "endTime": 2117.0,
+    "transcript": "[Welcome], all, to this week's [training] in our series of [patient care] programs. Our [physical therapy center] is known for the [excellent care] we provide to our patients, and that's because of [you], our staff. The [training] today will be about ways to [engage] the patients who reside at our facility through [playing games]. I've [prepared] different types of [activities] for us to try out, including some games that involve [mental stimulation] as well as [physical exercises]. But, I have to let you know that today, I must [leave at noon]. Next week we'll try out [more] of the games."
+  },
+  {
+    "id": "q80-82",
+    "label": "Questions 80-82",
+    "startTime": 2163.0,
+    "endTime": 2198.0,
+    "transcript": "Are you a [certified] commercial [truck driver]? [Hoffman Oversized Haulers] is currently looking for [experienced] truck drivers to [join] our team. As our name suggests, we [transport] [oversized cargo] throughout the region. With Hoffman, drivers enjoy [flexible scheduling]. In fact, we're the [only company] in the region that allows employees to [determine] their own [work hours]. If you don't have [experience] working with [oversized loads], [training] is available. Please check out our [website] to learn more about our [open positions]. We can't wait to [work] with you."
+  },
+  {
+    "id": "q83-85",
+    "label": "Questions 83-85",
+    "startTime": 2251.0,
+    "endTime": 2281.0,
+    "transcript": "Hi, Jinyu. I have some [exciting news]. The [Farmer's Table] television program wants to [feature] our [restaurant] in an upcoming [episode]. They'll be coming on [Wednesday] to [film] everyone at work in the kitchen during our [dinner service]. Since you're the [executive chef], I'll need you to come in [earlier] than usual to get everything [prepped] and [set up]. And just as a [reminder], I'm still planning to be [out of town] next week for the [Springdale Pastry and Dessert Festival]. Thanks."
+  },
+  {
+    "id": "q86-88",
+    "label": "Questions 86-88",
+    "startTime": 2326.0,
+    "endTime": 2363.0,
+    "transcript": "Good evening, and thank you for watching [Channel 4 News]. I'm here in [Rockville], a [suburb] in the [metropolitan area]. Rockville was recently [chosen] as the [site] of a multi-million dollar [electric vehicle] [battery factory]. This project [promises] to bring [thousands of jobs], both directly and indirectly, to the surrounding [community]. At a recent well-attended [public comment] meeting, residents had a chance to voice any [opposition] to the project. [No one] made any [comments]. To learn more about this [exciting development], [artist-rendered images] of the project are on [display] at the [city hall] building."
+  },
+  {
+    "id": "q89-91",
+    "label": "Questions 89-91",
+    "startTime": 2412.0,
+    "endTime": 2440.0,
+    "transcript": "Tired of [losing things] on your desk because it's too [cluttered]? If so, the [Optimum Space Organizer] is the [perfect product] for you. Designed with [office employees] like you in mind, this product can make even the [messiest] of desks look [neat] again. Best of all, the [organizer] [adjusts] to any size space you may have on your desk. It can be as [narrow] or as [wide] as you need it to be, within [seconds]. If you [call] in the next [ten minutes], you'll receive a [thirty percent] discount."
+  },
+  {
+    "id": "q92-94",
+    "label": "Questions 92-94",
+    "startTime": 2486.0,
+    "endTime": 2531.0,
+    "transcript": "Thanks for listening to this episode of [Fabulous Foods]. Every week we [discuss] a different [vegetable] and ways to cook with it to [maximize flavor]. Now, before we get started, I'm [excited] to announce that I've been [collaborating] with [Cartwell Kitchen Supplies] to develop a new line of [cookware]. It'll be [released] in November, but it's available for [pre-order] right now. Keep in mind, this product line will [not be available] for long. OK, let's move on to our [program]. With us today is [renowned chef] Rebecca Murray to talk about this week's vegetable: [eggplant]. Rebecca recently [launched] a [vegetarian restaurant] in New York that is getting [rave reviews] so far."
+  },
+  {
+    "id": "q95-97",
+    "label": "Questions 95-97",
+    "startTime": 2583.0,
+    "endTime": 2618.0,
+    "transcript": "[Attention], passengers. [Renovation work] to [upgrade] and [modernize] our [train station] is underway. We [apologize] for the [inconvenience] the [construction noise] may cause. Please note that [regional train] schedules are [not affected]. Train 133, with service to [Washington, D.C.], will be [arriving] shortly. All passengers to Washington, please [proceed] to [track 26B]. If you need [assistance] handling your [baggage], please speak to a [ticket agent] immediately. Train 133's next [stop] will be [Wilmington], followed by [Baltimore], and then [Washington, D.C.]."
+  },
+  {
+    "id": "q98-100",
+    "label": "Questions 98-100",
+    "startTime": 2673.0,
+    "endTime": 2712.0,
+    "transcript": "Hello, everyone. I'm Carmen Salazar, the [airport operations] director, and I wanted to thank you for [attending] this [press conference]. As of this week, [construction] on the new [regional airport] is proceeding [on schedule] for two of the three [terminals]. Minor [design adjustments] to Terminal A have put the project [slightly behind schedule], and we anticipate about [two months] will be added to the [construction time frame] as a result. I'd also like to mention that we now have a [3D printed model] of this project. Please feel free to [visit] our [website] so you can [view] it."
+  }
+]

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
+import { getProgressSummary } from '../utils/localStorage';
 import './HomePage.css';
 
 interface Test {
@@ -65,17 +66,35 @@ const HomePage: React.FC<HomePageProps> = ({ onSelectTest }) => {
       <main className="test-list-container">
         <h2>Chọn bài test để bắt đầu luyện tập</h2>
         <div className="test-grid">
-          {tests.map((test) => (
-            <div
-              key={test.id}
-              className="test-card"
-              onClick={() => onSelectTest(test.id)}
-            >
-              <div className="test-number">Test {test.id}</div>
-              <div className="test-name">{test.name}</div>
-              <div className="test-action">Bắt đầu luyện tập →</div>
-            </div>
-          ))}
+          {tests.map((test) => {
+            const progress = getProgressSummary(test.id);
+            return (
+              <div
+                key={test.id}
+                className="test-card"
+                onClick={() => onSelectTest(test.id)}
+              >
+                <div className="test-number">Test {test.id}</div>
+                <div className="test-name">{test.name}</div>
+                {progress && (
+                  <div className="test-progress">
+                    <div className="progress-stats">
+                      {progress.completed}/{progress.total} câu • {progress.accuracy}% đúng
+                    </div>
+                    <div className="progress-bar">
+                      <div
+                        className="progress-fill"
+                        style={{ width: `${(progress.completed / progress.total) * 100}%` }}
+                      ></div>
+                    </div>
+                  </div>
+                )}
+                <div className="test-action">
+                  {progress ? 'Tiếp tục luyện tập →' : 'Bắt đầu luyện tập →'}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </main>
     </div>
