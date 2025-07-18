@@ -9,6 +9,7 @@ interface TranscriptRendererProps {
   onIncorrectAnswer?: () => void;
   onBlanksStateChange?: (blanks: Record<string, BlankAnswer>) => void;
   initialBlanksState?: Record<string, BlankAnswer>;
+  onTranscriptComplete?: () => void;
 }
 
 interface BlankAnswer {
@@ -26,7 +27,8 @@ const TranscriptRenderer: React.FC<TranscriptRendererProps> = ({
   onAnswerChange,
   onIncorrectAnswer,
   onBlanksStateChange,
-  initialBlanksState
+  initialBlanksState,
+  onTranscriptComplete
 }) => {
   const [blanks, setBlanks] = useState<Record<string, BlankAnswer>>({});
 
@@ -143,7 +145,7 @@ const TranscriptRenderer: React.FC<TranscriptRendererProps> = ({
 
 
 
-  const focusInput = (direction: 'next' | 'prev', currentBlankId: string) => {
+  const focusInput = (direction: 'next' | 'prev', currentBlankId: string): boolean => {
     const inputs = document.querySelectorAll('.transcript-input');
     const currentIndex = Array.from(inputs).findIndex(
       input => (input as HTMLInputElement).dataset.blankId === currentBlankId
@@ -160,8 +162,11 @@ const TranscriptRenderer: React.FC<TranscriptRendererProps> = ({
 
       if (targetIndex >= 0) {
         (inputs[targetIndex] as HTMLInputElement).focus();
+        return true; // Successfully moved
       }
     }
+
+    return false; // Could not move (reached end or beginning)
   };
 
   const handleKeyDown = (e: React.KeyboardEvent, blankId: string) => {
@@ -210,7 +215,20 @@ const TranscriptRenderer: React.FC<TranscriptRendererProps> = ({
 
       // Only move to next input if answer is correct
       if (isCorrect) {
-        focusInput('next', blankId);
+        const moved = focusInput('next', blankId);
+
+        // If couldn't move to next (last input) and all blanks are correct, complete transcript
+        if (!moved && onTranscriptComplete) {
+          const allBlanks = Object.values(updatedBlanks);
+          const allCorrect = allBlanks.every(b => b.isCorrect && b.hasBeenChecked);
+
+          if (allCorrect) {
+            // Delay to show the correct answer briefly before moving
+            setTimeout(() => {
+              onTranscriptComplete();
+            }, 500);
+          }
+        }
       } else {
         // If incorrect, trigger audio replay and stay in the same input
         if (onIncorrectAnswer) {

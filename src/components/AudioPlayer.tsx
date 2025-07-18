@@ -170,7 +170,7 @@ const AudioPlayer = forwardRef<AudioPlayerRef, AudioPlayerProps>(({
 
       // Calculate replay range (2s before to 2s after current position)
       const replayStart = Math.max(originalPos - 2, currentSegment.startTime);
-      const replayEnd = Math.min(originalPos + 2, currentSegment.endTime);
+      const replayEnd = Math.min(originalPos + 1, currentSegment.endTime);
 
       console.log('Replay range:', { originalPos, replayStart, replayEnd });
 

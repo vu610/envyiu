@@ -83,7 +83,11 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
   };
 
   const handleBlanksStateChange = (newBlanksState: Record<string, any>) => {
-    setBlanksState(newBlanksState);
+    // Merge with existing blanksState instead of replacing
+    setBlanksState(prevState => ({
+      ...prevState,
+      ...newBlanksState
+    }));
   };
 
   // Calculate stats from all blanksState (across all transcripts)
@@ -116,6 +120,17 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
 
   const toggleSidebar = () => {
     setSidebarCollapsed(!sidebarCollapsed);
+  };
+
+  const handleTranscriptComplete = () => {
+    // Auto-advance to next transcript if not the last one
+    if (currentTranscriptIndex < transcripts.length - 1) {
+      console.log('Auto-advancing to next transcript');
+      setCurrentTranscriptIndex(currentTranscriptIndex + 1);
+    } else {
+      console.log('All transcripts completed!');
+      // Could show completion message or redirect
+    }
   };
 
   // Save progress to localStorage
@@ -351,6 +366,7 @@ const PracticePage: React.FC<PracticePageProps> = ({ testId, onBackToHome }) => 
                   onIncorrectAnswer={handleIncorrectAnswer}
                   onBlanksStateChange={handleBlanksStateChange}
                   initialBlanksState={blanksState}
+                  onTranscriptComplete={handleTranscriptComplete}
                 />
               </div>
 
